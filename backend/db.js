@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const foodcategory=require('../backend/models/foodcategory')
-const food_items=require('../backend/models/fooditems')
+const foodcategory=require('./models/foodcategory')
+const food_items=require('./models/fooditems')
 
 const mongoURI='mongodb+srv://chintukumar0460:chiku1234@cluster0.ltn8vrw.mongodb.net/foodexpress?retryWrites=true&w=majority'
 const mongoDB=async()=>{

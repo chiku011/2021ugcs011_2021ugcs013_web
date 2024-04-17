@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - mern-net
+
+  backend:
+    build:
+      context: backend
+    ports:
+      - "5000:5000"
+    networks:
+      - mern-net
+
+networks:
+  mern-net: {}
